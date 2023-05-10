@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+  }
+
+
+
+
+
+
+  .input_container{
+    display: inline-block;
+    text-align: center;
+  }
+  .awsome_input{
+    padding: 5px 10px;
+    border: none;
+    background: transparent;
+    display: block;
+  }
+  .awsome_input_border{
+    display:inline-block;
+    width:0px;
+    height: 2px;
+    background: #FEC938;
+    position: relative;
+    top:-5px;
+    -webkit-transition: all ease-in-out .15s;
+    -o-transition: all ease-in-out .15s;
+    transition: all ease-in-out .15s;
+  }
+  .awsome_input:hover,
+  .awsome_input:active, 
+  .awsome_input:focus{
+    outline: none;
+  }
+  .awsome_input:hover+.awsome_input_border,
+  .awsome_input:active+.awsome_input_border, 
+  .awsome_input:focus+.awsome_input_border{
+    width:100%;
+    
+  }
+  
+  
+  /* buttons */
+  .btn1 {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background: transparent;
+    border:none;
+    color:grey;
+    outline: none;
+    border-radius: 120px;
+    transition: 0.5s ease-in-out;
+    position: relative;
+  }
+  
+  
+  .btn1:hover {
+    transition: 0.5s ease-in-out;
+    background: #4F95DA;
+    color:#fff !important;
+  }
+  
+/*  Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(199, 218, 235); 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(199, 218, 235); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:#333; 
+}
+
+  
+
+/* toggleable divs */
+.left_side_divs{
+  width: 100%;
+  height: auto;
+  background: #fff;
+  border-left: 6px solid #4F95DA;
+  text-align: left;
+  padding: 0.1rem;
+  line-height: 1.5;
+  color:black;
+  font-weight: normal;
+
+}
+
+.left_side_divs:hover{
+  transition: 0.2s ease-in;
+  background: #fff;
+  border-left: 10px solid #4F95DA;
+  cursor:pointer;
+  color:black;
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+
+
+/* background image  */
+.initial_img_div{
+  /* background: url('chat1.jpg') ;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #fff; */
+  max-width: 100%;
+  height: auto;
+  
+
+
+}
+/* @keyframes backchange {
+  0%{
+   
+    background: url('Avatar.jpg') ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+  }
+  25%{
+    
+      background: url('chat1.jpg') ;
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-color: #fff;
+      max-width: 100%;
+      height: auto;
+  
+  
+  }
+  100%{
+   
+    background: url('chat2.jpg') ;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    max-width: 100%;
+    height: auto;
+
+  }
+  
+} */
+
+
+/* Send message input field  */
+.send_message_form{
+  padding: 5px 10px;
+  border: none !important;
+  outline:none !important;
+  background: transparent;
+  display: block;
+
+}
+.form-control:focus,.form-control:hover {
+ transition: 0.5s ease;
+ border-bottom: 2px solid #FEC938 !important;
+}
+
+
+/* .messages_div{
+  overflow-y: scroll;
+} */
+.scroller{
+  overflow: auto;
+  flex: auto;
+    
+}
